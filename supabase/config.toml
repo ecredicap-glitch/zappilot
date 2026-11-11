@@ -1,0 +1,11 @@
+[functions.whatsapp-admin]
+verify_jwt = true
+
+[functions.whatsapp-webhook]
+# The Evolution gateway authenticates with WHATSAPP_WEBHOOK_SECRET instead of a Supabase JWT.
+verify_jwt = false
+[functions.campaign-worker]
+verify_jwt = false
+
+[functions.conversation-admin]
+verify_jwt = true
